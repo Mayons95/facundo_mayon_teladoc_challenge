@@ -6,15 +6,17 @@ const lastName = HOME_PAGE.lastNameField;
 const userName = HOME_PAGE.userNameField;
 const password = HOME_PAGE.passwordField;
 
-
 When('The user fills the requested user data', () => {
   elementIsVisible(firstName);
   clickElement(firstName);
-  fillField(firstName,"Alvaro");
-  clickElement(lastName);
-  fillField(lastName,"Audet");
-  clickElement(userName)
-  fillField(userName,"Aaudet94")
-  clickElement(password);
-  fillField(password, "tartadechoclo");
+  cy.fixture('user-data').then((user)=>{
+    fillField(firstName,user.name)
+    });
+//   fillField(firstName,name);
+//   clickElement(lastName);
+//   fillField(lastName,dLastName);
+//   clickElement(userName)
+//   fillField(userName,dUserName)
+//   clickElement(password);
+//   fillField(password, dPassword);
   });
