@@ -54,3 +54,7 @@ export const clickElement = (selector) => {
   export const getElement = (selector) => {
     return cy.get(selector, { timeout: 18000 });
   };
+
+  export const navigate = (url) => {
+    cy.visit(url);
+  };

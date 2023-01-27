@@ -7,3 +7,4 @@ Feature: add new agent
     @agent @actions
     Scenario: Add new agent
         Given The admin user is on the home page
+        When The user click on the adds button
