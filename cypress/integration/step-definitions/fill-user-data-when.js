@@ -10,8 +10,8 @@ When('The user fills the requested user data', () => {
   elementIsVisible(firstName);
   clickElement(firstName);
   cy.fixture('user-data').then((user)=>{
-    fillField(firstName,user.name);
-    });  
+    fillField(firstName,getDataFromFixture('user-data','firstName'));
+   });  
   clickElement(lastName);
   cy.fixture('user-data').then((user)=>{
     fillField(lastName,user.lastName);

@@ -5,5 +5,5 @@ export const HOME_PAGE = {
     userNameField: 'input[name="UserName"]',
     passwordField: 'input[name="Password"]',
     emailField: 'input[name="Email"]',
-    phoneField: 'input[name="Mobilephone"]'
+    phoneField: 'input[name="Mobilephone"]',
 }

@@ -50,20 +50,18 @@ export const clickElement = (selector) => {
     getElement(selector).type(text);
     return this;
   };
-  
-  export const getElement = (selector) => {
-    return cy.get(selector, { timeout: 18000 });
-  };
 
   export const navigate = (url) => {
     cy.visit(url);
   };
-//funcion nueva ! ver si borro
+
+  export const getElement = (selector) => {
+    return cy.get(selector, { timeout: 18000 });
+  };
+
   // export const getDataFromFixture = (filename,requested) =>{
-  //   const searchData =''
   //   cy.fixture(filename).then((variable)=>{
-  //     searchData = variable.requested
-  //     return searchData
+  //     return variable.requested
   //     });
 
   // }
