@@ -3,5 +3,7 @@ export const HOME_PAGE = {
     firstNameField: 'input[name="FirstName"]',
     lastNameField: 'input[name="LastName"]',
     userNameField: 'input[name="UserName"]',
-    passwordField: 'input[name="Password"]'
+    passwordField: 'input[name="Password"]',
+    emailField: 'input[name="Email"]',
+    phoneField: 'input[name="Mobilephone"]'
 }

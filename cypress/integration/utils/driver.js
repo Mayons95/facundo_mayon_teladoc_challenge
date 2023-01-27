@@ -5,7 +5,7 @@ export const clickElement = (selector) => {
   
   export const forceClickElement = (selector) => {
     cy.wait(1000);
-    getElement(cssSelector).click({ force: true })
+    getElement(selector).click({ force: true })
     return this;
   };
   
@@ -58,3 +58,12 @@ export const clickElement = (selector) => {
   export const navigate = (url) => {
     cy.visit(url);
   };
+//funcion nueva ! ver si borro
+  // export const getDataFromFixture = (filename,requested) =>{
+  //   const searchData =''
+  //   cy.fixture(filename).then((variable)=>{
+  //     searchData = variable.requested
+  //     return searchData
+  //     });
+
+  // }
