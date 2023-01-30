@@ -6,4 +6,7 @@ export const HOME_PAGE = {
     passwordField: 'input[name="Password"]',
     emailField: 'input[name="Email"]',
     phoneField: 'input[name="Mobilephone"]',
+    role: 'select[name="RoleId"]',
+    customerId: 'input[type="radio"]'
+
 }
