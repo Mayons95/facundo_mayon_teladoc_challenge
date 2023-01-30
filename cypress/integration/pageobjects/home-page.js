@@ -7,6 +7,7 @@ export const HOME_PAGE = {
     emailField: 'input[name="Email"]',
     phoneField: 'input[name="Mobilephone"]',
     role: 'select[name="RoleId"]',
-    customerId: 'input[type="radio"]'
+    customerId: 'input[type="radio"]',
+    saveButton: 'button.btn.btn-success'
 
 }

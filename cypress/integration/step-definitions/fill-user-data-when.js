@@ -9,6 +9,7 @@ const role = HOME_PAGE.role;
 const customerId = HOME_PAGE.customerId;
 const phone = HOME_PAGE.phoneField;
 const email = HOME_PAGE.emailField;
+const saveButton = HOME_PAGE.saveButton;
 
 When('The user fills the requested user data', () => {
   elementIsVisible(firstName);
@@ -38,7 +39,7 @@ When('The user fills the requested user data', () => {
   cy.fixture('user-data').then((user)=>{
     fillField(phone,user.phone);
    });
-  
+  clickElement(saveButton);
    
 });
   
