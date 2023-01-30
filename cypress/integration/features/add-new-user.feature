@@ -9,3 +9,4 @@ Feature: add new user
         Given The admin user is on the home page
         When The user clicks the add button
         And The user fills the requested user data
+        Then The user its displayed

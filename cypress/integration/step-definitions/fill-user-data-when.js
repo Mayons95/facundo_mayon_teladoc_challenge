@@ -40,6 +40,5 @@ When('The user fills the requested user data', () => {
     fillField(phone,user.phone);
    });
   clickElement(saveButton);
-   
 });
   
