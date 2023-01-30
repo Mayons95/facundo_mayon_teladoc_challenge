@@ -8,6 +8,8 @@ export const HOME_PAGE = {
     phoneField: 'input[name="Mobilephone"]',
     role: 'select[name="RoleId"]',
     customerId: 'input[type="radio"]',
-    saveButton: 'button.btn.btn-success'
+    saveButton: 'button.btn.btn-success',
+    deleteButton: 'tr:nth-child(3) button[ng-click="delUser()"]',
+    okButton: 'button[class="btn ng-scope ng-binding btn-primary"]'
 
 }

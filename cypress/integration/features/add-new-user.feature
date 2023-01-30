@@ -4,7 +4,6 @@ Feature: add new user
     I want to add a new user
     in order to manage them
 
-    @agent @actions
     Scenario: Add new user
         Given The admin user is on the home page
         When The user clicks the add button
