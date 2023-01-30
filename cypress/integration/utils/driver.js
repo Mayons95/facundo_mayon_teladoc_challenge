@@ -5,7 +5,7 @@ export const clickElement = (selector) => {
   
   export const forceClickElement = (selector) => {
     cy.wait(1000);
-    getElement(cssSelector).click({ force: true })
+    getElement(selector).click({ force: true })
     return this;
   };
   
@@ -50,7 +50,18 @@ export const clickElement = (selector) => {
     getElement(selector).type(text);
     return this;
   };
-  
+
+  export const navigate = (url) => {
+    cy.visit(url);
+  };
+
   export const getElement = (selector) => {
     return cy.get(selector, { timeout: 18000 });
   };
+
+  // export const getDataFromFixture = (filename,requested) =>{
+  //   cy.fixture(filename).then((variable)=>{
+  //     return variable.requested
+  //     });
+
+  // }
