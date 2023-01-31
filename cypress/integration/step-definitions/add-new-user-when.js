@@ -7,3 +7,4 @@ When('The user clicks the add button', () => {
   elementIsVisible(addUserButton);
   clickElement(addUserButton);
   });
+  

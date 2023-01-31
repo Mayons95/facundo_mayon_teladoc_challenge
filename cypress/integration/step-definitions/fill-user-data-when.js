@@ -41,4 +41,3 @@ When('The user fills the requested user data', () => {
    });
   clickElement(saveButton);
 });
-  
