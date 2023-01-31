@@ -1,6 +1,7 @@
 import { When } from 'cypress-cucumber-preprocessor/steps';
 import { clickElement, elementIsVisible, fillField} from '../utils/driver';
 import { HOME_PAGE } from '../pageobjects/home-page'; 
+//Declaring constants that take the value of the corresponding selectors using the pattern page object
 const firstName = HOME_PAGE.firstNameField;
 const lastName = HOME_PAGE.lastNameField;
 const userName = HOME_PAGE.userNameField;
@@ -10,10 +11,13 @@ const customerId = HOME_PAGE.customerId;
 const phone = HOME_PAGE.phoneField;
 const email = HOME_PAGE.emailField;
 const saveButton = HOME_PAGE.saveButton;
-
+//Test that creates a new user, using the data declared on the user-data.json (Fixture)
 When('The user fills the requested user data', () => {
+  //Checking if the element it's visible
   elementIsVisible(firstName);
+  //Clicking the element
   clickElement(firstName);
+  //Filling the selected field with the data from the fixture
   cy.fixture('user-data').then((user)=>{
     fillField(firstName,user.name);
    });  
@@ -39,6 +43,7 @@ When('The user fills the requested user data', () => {
   cy.fixture('user-data').then((user)=>{
     fillField(phone,user.phone);
    });
+   //Clicking the dave button to complete the test
   clickElement(saveButton);
 });
   
