@@ -1,4 +1,4 @@
-# Facundo Mayon Telladoc Challenge - Cypress
+# Facundo Mayon Teladoc Challenge - Cypress
 
 ## Project goal
 This project is created with the aim of demonstrating my automation skills and knowledge.
